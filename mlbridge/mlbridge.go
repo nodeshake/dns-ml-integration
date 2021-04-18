@@ -10,4 +10,4 @@ import (
 	"strings"
 	"net/http"
 	"strconv"
-	"github.com/coredns/coredn
+	"github.com/coredns/coredns/plugi
