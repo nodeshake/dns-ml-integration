@@ -15,4 +15,4 @@ import (
 	"github.com/miekg/dns"
 )
 
-// Mlbridge is a plugin in CoreD
+// Mlbridge is a plugin in CoreDNS
