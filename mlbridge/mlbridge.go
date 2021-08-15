@@ -16,4 +16,5 @@ import (
 )
 
 // Mlbridge is a plugin in CoreDNS
-type Mlbridge struct
+type Mlbridge struct{
+	N
