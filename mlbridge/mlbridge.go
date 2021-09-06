@@ -17,4 +17,4 @@ import (
 
 // Mlbridge is a plugin in CoreDNS
 type Mlbridge struct{
-	Next plugin.Ha
+	Next plugin.Handle
