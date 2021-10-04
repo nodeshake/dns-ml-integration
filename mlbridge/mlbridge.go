@@ -20,4 +20,4 @@ type Mlbridge struct{
 	Next plugin.Handler
 }
 
-// ServeDNS implements the pl
+// ServeDNS implements the plugin.
