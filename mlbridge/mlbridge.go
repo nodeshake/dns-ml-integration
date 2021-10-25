@@ -21,4 +21,4 @@ type Mlbridge struct{
 }
 
 // ServeDNS implements the plugin.Handler interface.
-func (p Mlbridge) ServeD
+func (p Mlbridge) ServeDNS(c
