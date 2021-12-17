@@ -22,4 +22,5 @@ type Mlbridge struct{
 
 // ServeDNS implements the plugin.Handler interface.
 func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg) (int, error) {
-	state := request.Request{W: w, Req: r
+	state := request.Request{W: w, Req: r}
+	qn
