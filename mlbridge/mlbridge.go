@@ -24,4 +24,4 @@ type Mlbridge struct{
 func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg) (int, error) {
 	state := request.Request{W: w, Req: r}
 	qname := state.Name()
-	ip := stat
+	ip := state.
