@@ -27,4 +27,4 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
 	ip := state.IP()
 	jsonData := map[string]string{"Domain Name": qname, "IP": ip}
     jsonValue, _ := json.Marshal(jsonData)
-    resp
+    respons
