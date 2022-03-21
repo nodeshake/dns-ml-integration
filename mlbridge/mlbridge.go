@@ -27,4 +27,5 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
 	ip := state.IP()
 	jsonData := map[string]string{"Domain Name": qname, "IP": ip}
     jsonValue, _ := json.Marshal(jsonData)
-    response, err := http.Post("http://127.0.0.1:5000/", "application/json", bytes.NewBuffer(jsonValue)
+    response, err := http.Post("http://127.0.0.1:5000/", "application/json", bytes.NewBuffer(jsonValue))
+    if
