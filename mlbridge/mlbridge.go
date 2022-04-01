@@ -29,4 +29,4 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
     jsonValue, _ := json.Marshal(jsonData)
     response, err := http.Post("http://127.0.0.1:5000/", "application/json", bytes.NewBuffer(jsonValue))
     if err != nil {
-        fmt.Printf("The HTTP request 
+        fmt.Printf("The HTTP request f
