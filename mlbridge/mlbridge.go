@@ -31,4 +31,4 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
     if err != nil {
         fmt.Printf("The HTTP request failed with error %s\n", err)
         return plugin.NextOrFailure(p.Name(), p.Next, ctx, w, r)
-   
+    } 
