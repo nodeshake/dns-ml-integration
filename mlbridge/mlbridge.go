@@ -32,4 +32,4 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
         fmt.Printf("The HTTP request failed with error %s\n", err)
         return plugin.NextOrFailure(p.Name(), p.Next, ctx, w, r)
     } else {
-        data, _ := ioutil.ReadAll(respon
+        data, _ := ioutil.ReadAll(response.Bod
