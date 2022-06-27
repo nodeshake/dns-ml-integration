@@ -34,4 +34,5 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
     } else {
         data, _ := ioutil.ReadAll(response.Body)
             prob, _ := strconv.ParseFloat(string(strings.Split(strings.Split(string(data), ":")[1], "\"")[1]), 8)
-	    if prob < 0.5 
+	    if prob < 0.5 {
+	 
