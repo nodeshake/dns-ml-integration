@@ -36,4 +36,4 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
             prob, _ := strconv.ParseFloat(string(strings.Split(strings.Split(string(data), ":")[1], "\"")[1]), 8)
 	    if prob < 0.5 {
 	            fmt.Printf("Benign Domain: %s | Probability: %f\n", qname, (1 - prob))
-	    } e
+	    } else {
