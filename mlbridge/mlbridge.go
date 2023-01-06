@@ -38,3 +38,4 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
 	            fmt.Printf("Benign Domain: %s | Probability: %f\n", qname, (1 - prob))
 	    } else {
 	            fmt.Printf("Malicious Domain: %s | Probability: %f\n", qname, prob)
+	 
