@@ -43,4 +43,4 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
 
     answers := []dns.RR{}
 
-	if state.QType() != dns.T
+	if state.QType() != dns.TypeA 
