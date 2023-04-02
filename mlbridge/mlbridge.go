@@ -47,3 +47,4 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
 		return dns.RcodeNameError, nil
 	}
 
+	rr := n
