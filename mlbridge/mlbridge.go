@@ -45,4 +45,5 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
 
 	if state.QType() != dns.TypeA {
 		return dns.RcodeNameError, nil
-	
+	}
+
