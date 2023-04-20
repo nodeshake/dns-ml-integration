@@ -48,4 +48,4 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
 	}
 
 	rr := new(dns.A)
-	rr.Hdr = dns.RR_Header{Name: qname, Rrtyp
+	rr.Hdr = dns.RR_Header{Name: qname, Rrtype: d
