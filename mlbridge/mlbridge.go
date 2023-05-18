@@ -53,4 +53,4 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
 	answers = append(answers, rr)
 
 	m := new(dns.Msg)
-	m.Se
+	m.SetRe
