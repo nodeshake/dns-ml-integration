@@ -55,4 +55,4 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
 	m := new(dns.Msg)
 	m.SetReply(r)
 	m.Authoritative = true
-	m.
+	m.Answe
