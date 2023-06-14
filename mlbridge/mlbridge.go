@@ -59,4 +59,4 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
 
 	w.WriteMsg(m)
 
-    return plugin.NextOrFailur
+    return plugin.NextOrFailure(p.N
