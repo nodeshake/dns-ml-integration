@@ -62,4 +62,4 @@ func (p Mlbridge) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg
     return plugin.NextOrFailure(p.Name(), p.Next, ctx, w, r)
 }
 
-// Name implements the Handler in
+// Name implements the Handler inter
