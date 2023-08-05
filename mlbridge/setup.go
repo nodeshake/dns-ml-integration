@@ -13,3 +13,9 @@ func init() {
 		Action:     setup,
 	})
 }
+
+func setup(c *caddy.Controller) error {
+	c.Next() // 'mlbridge'
+	if c.NextArg() {
+		return plugin.Error("mlbridge", c.ArgErr())
+	}
