@@ -12,3 +12,4 @@ func init() {
 		ServerType: "dns",
 		Action:     setup,
 	})
+}
