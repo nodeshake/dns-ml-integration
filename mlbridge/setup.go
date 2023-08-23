@@ -19,3 +19,7 @@ func setup(c *caddy.Controller) error {
 	if c.NextArg() {
 		return plugin.Error("mlbridge", c.ArgErr())
 	}
+
+	dnsserver.GetConfig(c).AddPlugin(func(next plugin.Handler) plugin.Handler {
+		return Mlbridge{}
+	})
